@@ -1,0 +1,49 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "stylelint.autoFixOnSave": true,
+  "stylelint.useLocal": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "css.validate": false,
+  "scss.validate": false,
+  "eslint.format.enable": true,
+  "eslint.validate": ["html", "vue", "javascript"],
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[html]": {
+    "editor.rulers": [100, 120],
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "codemetrics.basics.ComplexityLevelNormal": 10,
+  "codemetrics.basics.ComplexityLevelHigh": 20,
+  "codemetrics.basics.ComplexityLevelExtreme": 30,
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src",
+    "~": "${workspaceRoot}/src"
+  },
+  "cSpell.words": [
+    "Nuxt",
+    "pinia",
+    "vite",
+    "nuxtjs",
+    "stylelint",
+    "composables",
+    "rollbar"
+  ],
+  "cSpell.ignorePaths": [
+    "**/package.json",
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/**",
+    ".vscode"
+  ]
+}

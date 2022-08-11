@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  test-project:
+    image: node:16.15.1
+    container_name: "test-project"
+    volumes:
+      - ../:/usr/src/app
+    ports:
+      - 3000:3000
+    tty: true
+    depends_on:
+      - nginx
+
+  nginx:
+    image: nginx:1.18
+    container_name: "test-project-nginx"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/wildcard.104-dev.com.tw.pem:/etc/nginx/wildcard.104-dev.com.tw.pem
+      - ./nginx/wildcard.104-dev.com.tw-key.pem:/etc/nginx/wildcard.104-dev.com.tw-key.pem
+    networks:
+      - webnet
+    ports:
+      - 80:80
+      - 443:443
+
+networks:
+  webnet:

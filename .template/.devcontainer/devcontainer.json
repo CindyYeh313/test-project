@@ -1,0 +1,25 @@
+{
+    "name": "104z-temp",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "104z-temp",
+    "remoteUser": "node",
+    "extensions": [
+      "vue.volar",
+      "vue.vscode-typescript-vue-plugin",
+      "dbaeumer.vscode-eslint",
+      "hex-ci.stylelint-plus",
+      "kisstkondoros.vscode-codemetrics",
+      "streetsidesoftware.code-spell-checker",
+      "christian-kohler.path-intellisense"
+    ],
+    "settings": {
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "bash",
+          "icon": "terminal-bash"
+        }
+      },
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "workspaceFolder": "/usr/src/app"
+  }

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "hex-ci.stylelint-plus",
+    "kisstkondoros.vscode-codemetrics",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense",
+    "ms-vscode-remote.remote-containers"
+  ]
+}
