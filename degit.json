@@ -1,6 +1,0 @@
-[
-	{
-		"action": "remove",
-		"files": ["README.md", "test.txt","template-script"]
-	}
-]
