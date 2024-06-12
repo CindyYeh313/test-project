@@ -1,0 +1,13 @@
+name: "JIRA Check"
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+  
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: A job to check JIRA issue
+    steps:
+      - uses: knawat/github-actions-jira@v1
+        with:
+          organization-name: 'fonta0098721'
